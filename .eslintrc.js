@@ -44,7 +44,7 @@ module.exports = {
     'func-call-spacing': 'error',
     'key-spacing': 'error',
     'keyword-spacing': 'error',
-    'linebreak-style': ['error', 'unix'], // we can check this in git as well
+    //'linebreak-style': ['error', 'unix'], // we can check this in git as well
     'new-cap': 'error',
     'no-mixed-spaces-and-tabs': 'error',
     'one-var': ['error', {
