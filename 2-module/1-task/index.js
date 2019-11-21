@@ -14,5 +14,6 @@ function clone(obj) {
     }
     res[key] = value;
   }
+  
   return res;
 }
