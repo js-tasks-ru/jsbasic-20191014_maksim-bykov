@@ -3,6 +3,7 @@
  * @param {Element} table
  */
 function highlight(table) {
+
   let tbody = table.querySelector('tbody');
   let rows = tbody.querySelectorAll('tr');
   rows.forEach(row => {

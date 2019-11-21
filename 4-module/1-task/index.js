@@ -4,6 +4,7 @@
  * @return {HTMLUListElement}
  */
 function makeFriendsList(friends) {
+
   let res = document.createElement('ul');
   friends.forEach(friend=>{
     let elem = document.createElement('li');

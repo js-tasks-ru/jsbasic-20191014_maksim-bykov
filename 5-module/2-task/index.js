@@ -66,6 +66,7 @@ function SortableTable(items) {
    * @param {boolean} desc - признак того, что сортировка должна идти в обратном порядке
    */
   this.sort = (column, desc = false) => {
+  
     let columns = ['name', 'age', 'salary', 'city'];
     let columnName = columns[column];
 

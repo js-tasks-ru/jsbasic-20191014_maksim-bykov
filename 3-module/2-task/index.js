@@ -4,6 +4,7 @@
  * @returns {{min:number, max:number}}  объект
  */
 function getMinMax(str) {
+
   let numbers = Array.from(str)
     .map((ch) => (ch >= '0' && ch <= '9' || ch == '+' || ch == '-' || ch == '.') ? ch : ' ')
     .join('')
