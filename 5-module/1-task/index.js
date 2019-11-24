@@ -17,8 +17,12 @@ function highlight(table) {
     }
 
     let gender = cols[2].innerText;
-    if (gender == 'm') row.classList.add('male');
-    if (gender == 'f') row.classList.add('female');
+    if (gender == 'm') {
+      row.classList.add('male');
+    }
+    if (gender == 'f') {
+      row.classList.add('female');
+    }
 
     let age = +cols[1].innerText;
     if (age < 18) {

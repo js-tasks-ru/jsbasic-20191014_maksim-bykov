@@ -9,7 +9,9 @@ function showSalary(data, age) {
   
   for (let person of data) {
     if (person.age <= age) {
-      if (res.length > 0) res += '\n';
+      if (res.length > 0) {
+        res += '\n';
+      }
       res += `${person.name}, ${person.balance}`;
     }
   }

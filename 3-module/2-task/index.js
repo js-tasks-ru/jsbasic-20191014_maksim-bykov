@@ -17,8 +17,12 @@ function getMinMax(str) {
     res.min = numbers[0];
     res.max = numbers[0];
     numbers.forEach(el => {
-      if (res.min > el) res.min = el;
-      if (res.max < el) res.max = el;
+      if (res.min > el) {
+        res.min = el;
+      }
+      if (res.max < el) {
+        res.max = el;
+      }
     });
   }
   

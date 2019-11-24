@@ -4,7 +4,9 @@
  * @returns {Object}
  */
 function clone(obj) {
-  if (!obj) return obj;
+  if (!obj) {
+    return obj;
+  }
 
   let res = {};
   for (let key in obj) {
