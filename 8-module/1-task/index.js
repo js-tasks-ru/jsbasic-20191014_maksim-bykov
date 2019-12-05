@@ -17,6 +17,7 @@ class ProductList {
         this.el.innerHTML = content;
 
         let cartlist = this.el.querySelector('.homepage-cards');
+        cartlist.products = data;
         cartlist.addEventListener('click', this.addHandler);
       });
   }
@@ -31,7 +32,10 @@ class ProductList {
         let cart = localStorage.getItem('cart-products');
         let cartData = cart ? JSON.parse(cart) : [];
         if (!cartData.some(cart => cart.id == productId)) {
-          cartData.push({id: productId});
+          let products = this.products.filter(p => p.id == productId);
+          if (products.length == 1) {
+            cartData.push(products[0]);
+          }
         }
         localStorage.setItem('cart-products', JSON.stringify(cartData));
       }
